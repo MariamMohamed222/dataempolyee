@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DateBase</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body class="body">
+    <h1 class="text-center  fw-bold my-4">JSON CRUD</h1>
+    <div class="container col-md-11">
+        <div class="card">
+            <div class="card-body">
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control my-2" id="Name" placeholder="Employee Name" >
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control my-2" id="Position" placeholder="Employee Position" >
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row" id="inputSalary">
+                        <div class="col-md-2"><input type="number" class="form-control my-2"  placeholder="Gross" ></div>
+                        <div class="col-md-2"><input type="number" class="form-control my-2"  placeholder="Tax%" ></div>
+                        <div class="col-md-2"><input type="number" class="form-control my-2"  placeholder="TranCost" ></div>
+                        <div class="col-md-2"><input type="number" class="form-control my-2"  placeholder="Bonous" ></div>
+                        <div class="col-md-2"><input type="number" class="form-control my-2"  placeholder="Totle" readonly ></div>
+                        
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <select class="form-control my-2" id="Department"  >
+                                <option selected disabled Department> Department</option>
+                                <option>HR</option>
+                                <option>Programmer</option>
+                                <option>Developer</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="number" class="form-control my-2" id="Counter" placeholder="Counter">
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="d-grid">
+                        <button class="btn btn-outline-primary my-3 form-control text-center " id="btnCreat">Add New Employee</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="text-center  fw-bold my-4">List Of Employee </h1>
+    <div class="container col-md-12 col-lg-6 ">
+            <div class="card">
+                <div class="card-body">
+                    <table class="table">
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Position</th>
+                            <th>Department</th>
+                            <th>Gross</th>
+                            <th>Tax%<th>
+                            <th>TranCost</th>
+                            <th>Bonous</th>
+                            <th>Totle</th>
+                        </tr>
+                        <tbody id="tbody"></tbody>
+                    </table>
+                </div>
+
+            </div>
+       
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
+
+
+
+ 

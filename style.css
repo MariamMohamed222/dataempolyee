@@ -1,0 +1,23 @@
+.body{
+    background-color: rgb(7, 2, 82);
+    color: white;
+}
+.card-body{
+    background-color: rgb(7, 2, 82) !important;
+}
+.card{
+    background-color: rgb(9, 9, 172) !important;
+    padding: 15px;
+    border-radius: 15px;
+}
+input , select{
+    background-color: rgb(9, 9, 172) !important;
+    color: white !important;
+    font-size: 15px;
+}
+table tr th  {
+    color: rgb(9, 9, 172) !important ;
+}
+table td {
+    color: white !important;
+}
